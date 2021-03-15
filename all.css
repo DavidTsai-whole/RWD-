@@ -281,15 +281,15 @@ body {
 /*opinion*/
 
 .opinion {
-	text-align: left;
 	background: #EDE8E5;
 }
 
 .opinion h2 {
+	text-align: center;
 	color: #3D1101;
 	font-size: 24px;
 	padding-bottom: 51px;
-	text-align: center;
+	font-weight: bold;
 }
 
 .feedback {
@@ -350,6 +350,7 @@ body {
 	color: #3D1101;
 	font-size: 24px;
 	padding-bottom: 38px;
+	font-weight: bold;
 }
 
 .mapContent {
@@ -463,12 +464,12 @@ body {
 }
 
 .about {
-	width: 50%;
+	width: 60%;
 	padding-left: 21px;
 }
 
 .contact {
-	width: 50%;
+	width: 40%;
 	padding-left: 21px;
 }
 
