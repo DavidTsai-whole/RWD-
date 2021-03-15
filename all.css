@@ -63,6 +63,20 @@ body {
 	margin: auto;
 }
 
+.container {
+	padding: 50px 31px;
+}
+
+.container2 {
+	padding: 50px 21px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container3 {
+	padding: 50px 21px;
+}
+
 /*header*/
 
 .logo {
@@ -171,7 +185,7 @@ body {
 	font-size: 36px;
 }
 
-/*content*/
+/*feature*/
 
 .feature {
 	text-align: center;
@@ -181,8 +195,7 @@ body {
 
 .title {
 	font-size: 20px;
-	padding-top: 50px;
-	line-height: 1.6;
+	line-height: 1.5;
 	font-weight: bold;
 	margin-bottom: 32px;
 }
@@ -194,12 +207,11 @@ body {
 .feature ul {
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 50px;
 }
 
 .feature ul li {
-	width: 31%;
-	margin-left: 2.2%;
+	width: 33.333333%;
+	padding: 0 31px;
 }
 
 .feature ul li h3 {
@@ -209,16 +221,14 @@ body {
 
 @media(max-width:768px) {
 	.feature ul li {
-		width: 47%;
-		margin-top: 3%;
+		width: 49.999999%;
+		margin-bottom: 20px;
 	}
 }
 
 @media(max-width:567px) {
 	.feature ul li {
 		width: 100%;
-		margin-left: 5%;
-		margin-top: 8%;
 	}
 }
 
@@ -236,20 +246,20 @@ body {
 }
 
 .chefImg {
-	padding-left: 2%;
-	max-width: 50%;
+	width: 49.99999%;
 }
 
 .chefImg img {
-	height: 100%;
+	object-fit: cover;
+	padding-left: 42px;
 }
 
 .introduction {
-	max-width: 45%;
-	margin-left: 3%;
-	margin-right: 2%;
+	width: 49.99999%;
 	padding-top: 81px;
-	padding-bottom: 2%;
+	padding-bottom: 80px;
+	padding-left: 25px;
+	padding-right: 37px;
 }
 
 .introduction h3 {
@@ -272,9 +282,7 @@ body {
 
 .opinion {
 	text-align: left;
-	padding-top: 50px;
 	background: #EDE8E5;
-	padding-bottom: 50px;
 }
 
 .opinion h2 {
@@ -291,22 +299,22 @@ body {
 
 .feedback li {
 	display: flex;
-	width: 31%;
-	margin-left: 2%;
+	width: 33.333333%;
 	align-items: flex-start;
+	padding-left: 21px;
+	padding-right: 21px;
 }
 
 @media(max-width:768px) {
 	.feedback li {
-		width: 48%;
-		margin-top: 3%;
+		width: 49.99999%;
+		margin-bottom: 20px;
 	}
 }
 
 @media(max-width:567px) {
 	.feedback li {
 		width: 100%;
-		margin-right: 2%;
 	}
 }
 
@@ -334,9 +342,7 @@ body {
 /*map*/
 
 .map {
-	padding-top: 50px;
 	background: #f6f4f3;
-	padding-bottom: 50px;
 }
 
 .map h2 {
@@ -352,37 +358,27 @@ body {
 }
 
 .mapImg {
-	width: 48%;
-	margin-left: 2%;
-}
-
-@media(max-width:567px) {
-	.mapImg {
-		width: 100%;
-		margin-bottom: 5%;
-		margin-left: 7%;
-	}
+	width: 49.999999%;
 }
 
 .mapImg img {
 	height: 100%;
 }
 
-.form {
-	width: 48%;
-	margin-left: 2%;
-	color: #3D1101;
-}
-
 @media(max-width:567px) {
-	.form {
+	.mapImg {
 		width: 100%;
-		margin-right: 2%;
 	}
 }
 
+.form {
+	width: 49.999999%;
+	color: #3D1101;
+	flex-direction: column;
+}
+
 .formInput {
-	width: 95%;
+	width: 100%;
 	height: 32px;
 	background: #FFFFFF;
 	border: 1px solid #CCCCCC;
@@ -393,7 +389,17 @@ body {
 	padding-left: 14px;
 }
 
+@media(max-width:768px) {
+	.form {
+		padding-left: 20px;
+	}
+}
+
 @media(max-width:567px) {
+	.form {
+		width: 100%;
+		padding-left: 0%;
+	}
 	.formInput {
 		width: 100%;
 	}
@@ -410,7 +416,7 @@ body {
 
 .btn {
 	text-align: right;
-	padding-top: 40px;
+	padding-top: 45px;
 }
 
 .btn input {
@@ -433,12 +439,8 @@ body {
 /*footer*/
 
 .footer {
-	padding-top: 50px;
 	background: #EDE8E5;
-	display: flex;
-	flex-wrap: wrap;
 	color: #3D1101;
-	padding-bottom: 40px;
 }
 
 .footer h3 {
@@ -457,17 +459,17 @@ body {
 .left {
 	display: flex;
 	flex-wrap: wrap;
-	width: 57%;
+	width: 50%;
 }
 
 .about {
-	width: 60%;
-	margin-left: 2%;
+	width: 50%;
+	padding-left: 21px;
 }
 
 .contact {
-	width: 35%;
-	margin-left: 3%;
+	width: 50%;
+	padding-left: 21px;
 }
 
 @media(max-width:567px) {
@@ -476,16 +478,18 @@ body {
 	}
 	.about {
 		width: 100%;
+		margin-bottom: 30px;
 	}
 	.contact {
 		width: 100%;
-		margin-top: 5%;
+		margin-bottom: 30px;
 	}
 }
 
 .right {
-	width: 40%;
-	text-align: end;
+	width: 50%;
+	text-align: right;
+	padding-right: 21px;
 }
 
 .right h2 {
@@ -500,7 +504,7 @@ body {
 }
 
 .right li {
-	margin-right: 12px;
+	padding-left: 12px;
 }
 
 @media(max-width:768px) {
