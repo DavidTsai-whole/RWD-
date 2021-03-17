@@ -7,28 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="all.css">
-    <link rel="stylesheet" href="hover-min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="wrap">
-
         <div class="logo">
             <h1><a href="index.html">六角西餐廳</a></h1>
             <ul class="pcMenu">
-                <li><a class="scrollTop  hvr-underline-from-center" href="#feature">特色</a></li>
-                <li><a class="scrollTop  hvr-underline-from-center" href="#chef">主廚</a></li>
-                <li><a class="scrollTop  hvr-underline-from-center" href="#opinion">意見</a></li>
-                <li><a class="scrollTop  hvr-underline-from-center" href="#map">地圖</a></li>
-                <li><a class="scrollTop  hvr-underline-from-center" href="">菜單</a></li>
-                <li><a class="scrollTop  hvr-underline-from-center" href="">登入</a></li>
+                <li><a class="scrollTop" href="#feature">特色</a></li>
+                <li><a class="scrollTop" href="#chef">主廚</a></li>
+                <li><a class="scrollTop" href="#opinion">意見</a></li>
+                <li><a class="scrollTop" href="#map">地圖</a></li>
+                <li><a class="" href="index2.html">菜單</a></li>
+                <li><a class="" href="">登入</a></li>
             </ul>
             <a class="phoneMenu" href=""><i class="fas fa-bars fa-2x"></i></a>
         </div>
-
-
         <div class="banner">
             <img src="assets/header_desktop.png" alt="">
             <div class="slogan">
@@ -51,7 +47,7 @@
                     </h2>
                 </div>
                 <ul>
-                    <li>
+                    <li class="animate">
                         <img src="assets/feature_1.png" alt="">
                         <h3>台灣本土蔬菜</h3>
                         <p>
@@ -60,7 +56,7 @@
                             elit eget elit facilisis tristique. Nam vel iaculis mauris
                         </p>
                     </li>
-                    <li>
+                    <li class="animate">
                         <img src="assets/feature_2.png" alt="">
                         <h3>專業米其林廚師</h3>
                         <p>
@@ -70,11 +66,12 @@
                             turpis.
                         </p>
                     </li>
-                    <li>
+                    <li class="animate">
                         <img src="assets/feature_3.png" alt="">
                         <h3>對於專業不能退讓</h3>
                         <p>
-                            Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at
+                            Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula
+                            at
                             nibh
                             quis, facilisis accumsan turpis.
                         </p>
@@ -84,8 +81,8 @@
 
         </div>
         <div class="chef" id="chef">
-            <img src="assets/main_chef_brown.png" alt="">
-            <div class="introduction">
+            <img class="animate2" src="assets/main_chef_brown.png" alt="">
+            <div class="introduction animate3">
                 <h3>今日主廚 : 帕金森 、 梅在帕</h3>
                 <h4>Today Chef: h4ulm in Shock</h4>
                 <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.
@@ -105,7 +102,7 @@
             <div class="container3">
                 <h2>聽聽別人的感想</h2>
                 <ul class="feedback">
-                    <li>
+                    <li class="animate">
                         <img src="assets/avatar_1.png" alt="">
                         <div class="responsive">
                             <h3>高雄一口吃</h3>
@@ -116,7 +113,7 @@
                         </div>
 
                     </li>
-                    <li>
+                    <li class="animate">
                         <img src="assets/avatar_2.png" alt="">
                         <div class="responsive">
                             <h3>廟口小霸王</h3>
@@ -126,7 +123,7 @@
                             <h5>-- 金身道士</h5>
                         </div>
                     </li>
-                    <li>
+                    <li class="animate">
                         <img src="assets/avatar_3.png" alt="">
                         <div class="responsive">
                             <h3>春天也來了</h3>
@@ -147,11 +144,11 @@
                     要不要先定位呢 ?
                 </h2>
                 <div class="mapContent">
-                    <div class="mapImg">
+                    <div class="mapImg animate2">
                         <img src="assets/Map.png" alt="">
                     </div>
 
-                    <form action="index.html" class="form">
+                    <form action="index.html" class="form animate3">
                         <label for="name">姓名</label>
                         <br>
                         <input class="formInput" type="text" id="name" placeholder="六角講師吃尾牙">
@@ -217,7 +214,10 @@
                 </div>
             </div>
         </div>
-
+        <div class="top">
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </div>
+    </div>
         <script src="jquery-3.6.0.min.js"></script>
         <script src="all.js"></script>
 </body>
