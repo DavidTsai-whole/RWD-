@@ -8,12 +8,13 @@ $(document).ready(function () {
         $('body').toggleClass('menu-show');
     });
 
-    /*
-        $('.pcMenu li').click(function (e) {
-            e.preventDefault();
-            $('body').toggleClass('menu-show');
-        })
-    */
+
+    $('.pcMenu li').click(function (e) {
+        $('body').toggleClass('menu-show');
+        $('.fa-bars').toggle();
+        $('.fa-times').toggle();
+    })
+
     $('.scrollTop').click(function (e) {
         e.preventDefault();
         let target = $(this).attr('href');
@@ -61,10 +62,10 @@ $(document).ready(function () {
                 $(this).addClass('fadeX');
             }
         });
-        if(scrollPos >= 50)
-        $('.top').addClass('fadeIn');
+        if (scrollPos >= 50)
+            $('.top').addClass('fadeIn');
         else
-        $('.top').removeClass('fadeIn');
+            $('.top').removeClass('fadeIn');
     });
 
 });
