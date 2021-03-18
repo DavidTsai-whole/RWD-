@@ -584,19 +584,14 @@ body {
 	transform: translateY(0);
 }
 
-.fadeLeft {
-	opacity: 1;
-	transform: translateX(0);
-}
-
-.fadeRight {
+.fadeX {
 	opacity: 1;
 	transform: translateX(0);
 }
 
 /*index2.html*/
 
-.content {
+.MenuContent {
 	min-height: calc(100vh - 278px);
 	display: flex;
 	padding: 50px 42px;
@@ -830,6 +825,12 @@ body {
 	padding-right: 9px;
 }
 
+.addCart:hover {
+	background: #FF5E45;
+	cursor: pointer;
+	color: white;
+}
+
 .fa-heart {
 	position: absolute;
 	top: 9px;
@@ -844,4 +845,117 @@ body {
 	right: 30px;
 	bottom: 30px;
 	font-size: 50px;
+	transition: all 1.2s;
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.top:hover {
+	cursor: pointer;
+}
+
+/*Login*/
+
+.loginContent {
+	min-height: calc(100vh - 278px);
+	background: #EDE8E5;
+	padding: 50px 0;
+	color: #3D1101;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.loginContent h2 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.loginContent p {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+
+.login {
+	max-width: 300px;
+	box-shadow: 3px 3px 4px 0;
+	padding: 15px 15px;
+	border-top: 3px solid #FF5E45;
+}
+
+.login h3 {
+	font-weight: bold;
+	text-align: center;
+}
+
+.login input {
+	margin-top: 3px;
+	width: 100%;
+	height: 32px;
+}
+
+.login a {
+	color: red;
+}
+
+.email {
+	margin-top: 15px;
+	position: relative;
+}
+
+.email input {
+	padding-left: 30px;
+}
+
+.password {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.password input {
+	padding-left: 30px;
+}
+
+.loginBtn {
+	display: flex;
+	justify-content: space-around;
+}
+
+.loginBtn input {
+	width: 45%;
+	border: none;
+	color: white;
+	border-radius: 3px;
+}
+
+.loginBtn input:hover {
+	cursor: pointer;
+}
+
+.BtnRegister {
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.BtnLogin {
+	background: #F56C23;
+}
+
+.fa-envelope {
+	position: absolute;
+	top: 58%;
+	left: 9px;
+	opacity: 0.5;
+	font-size: 9px;
+}
+
+.fa-lock {
+	position: absolute;
+	top: 44%;
+	left: 9px;
+	opacity: 0.5;
+	font-size: 9px;
 }

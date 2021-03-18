@@ -19,6 +19,12 @@ $(document).ready(function () {
         $('html,body').animate({ scrollTop: targetPos }, 1000);
     });
 
+    $('.top').click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    })
+
     $(window).scroll(function () {
         let scrollPos = $(window).scrollTop();
         let windowHei = $(window).height();
@@ -44,15 +50,19 @@ $(document).ready(function () {
         $('.animate2').each(function () {
             let thisPos = $(this).offset().top;
             if ((windowHei / 1.3 + scrollPos) >= thisPos) {
-                $(this).addClass('fadeLeft');
+                $(this).addClass('fadeX');
             }
         });
         $('.animate3').each(function () {
             let thisPos = $(this).offset().top;
             if ((windowHei / 1.3 + scrollPos) >= thisPos) {
-                $(this).addClass('fadeRight');
+                $(this).addClass('fadeX');
             }
         });
+        if(scrollPos >= 50)
+        $('.top').addClass('fadeIn');
+        else
+        $('.top').removeClass('fadeIn');
     });
 
 });
