@@ -3,6 +3,8 @@
 $(document).ready(function () {
     $('.phoneMenu').click(function (e) {
         e.preventDefault();
+        $('.fa-bars').toggle();
+        $('.fa-times').toggle();
         $('body').toggleClass('menu-show');
     });
 

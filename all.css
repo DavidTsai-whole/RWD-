@@ -130,7 +130,7 @@ body {
 		left: 0;
 		right: 0;
 		background: black;
-		transition: max-height 1.2s;
+		transition: all 1.2s;
 	}
 	.pcMenu li:hover {
 		background: #3D1101;
