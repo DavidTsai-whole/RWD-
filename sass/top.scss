@@ -1,0 +1,12 @@
+.top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	font-size: 50px;
+	transition: all 1.2s;
+	opacity: 0;
+	transform: translateY(50px);
+}
+.top:hover {
+	cursor: pointer;
+}

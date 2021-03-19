@@ -1,0 +1,17 @@
+@mixin desktop-top-below{
+    @media (max-width:1024px){
+        @content
+    }
+};
+
+@mixin pad{
+    @media(max-width:768px){
+        @content
+    }
+};
+
+@mixin iphone{
+    @media(max-width:568px){
+        @content
+    }
+};

@@ -1,0 +1,20 @@
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Microsoft JhengHei";
+  }
+  .wrap {
+	max-width: 1024px;
+	margin: auto;
+}

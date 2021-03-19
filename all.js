@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
 
-    $('.pcMenu li').click(function (e) {
+    $('.logo ul li').click(function (e) {
         $('body').toggleClass('menu-show');
         $('.fa-bars').toggle();
         $('.fa-times').toggle();

@@ -1,0 +1,231 @@
+.feature {
+  text-align: center;
+  background: #EDE8E5;
+  color: #3D1101;
+}
+.feature img {
+  border-radius: 50%;
+}
+.feature ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature li {
+  width: 33.333333%;
+  padding: 0 31px;
+}
+.feature li h3 {
+  padding-top: 20px;
+  padding-bottom: 11px;
+}
+.feature li p {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .feature li {
+    width: 49.999999%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 568px) {
+  .feature li {
+    width: 100%;
+  }
+}
+.chef {
+  background: #3D1101;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.chef img {
+  width: 49.99999%;
+  height: 460px;
+  padding-left: 42px;
+}
+
+.introduction {
+  width: 49.99999%;
+  padding-left: 25px;
+  padding-right: 77px;
+}
+.introduction h3 {
+  color: white;
+  font-size: 20px;
+}
+.introduction h4 {
+  color: white;
+  padding-bottom: 16px;
+  padding-top: 10px;
+}
+.introduction p {
+  color: white;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .chef img {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .introduction {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+.indexContainer {
+  padding: 50px 21px;
+}
+
+.opinion {
+  background: #EDE8E5;
+}
+.opinion h2 {
+  text-align: center;
+  color: #3D1101;
+  font-size: 24px;
+  padding-bottom: 51px;
+  font-weight: bold;
+}
+
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback li {
+  display: flex;
+  width: 33.333333%;
+  align-items: flex-start;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+.feedback img {
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.responsive {
+  color: #3d1101;
+  padding-top: 20px;
+  line-height: 1.2;
+}
+.responsive h3 {
+  font-size: 18px;
+  padding-bottom: 22px;
+}
+.responsive h5 {
+  text-align: right;
+  padding-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .feedback li {
+    width: 49.99999%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 568px) {
+  .feedback li {
+    width: 100%;
+  }
+}
+.map {
+  background: #f6f4f3;
+}
+.map h2 {
+  text-align: center;
+  color: #3D1101;
+  font-size: 24px;
+  padding-bottom: 38px;
+  font-weight: bold;
+}
+
+.mapContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mapImg {
+  width: 49.999999%;
+}
+.mapImg img {
+  height: 388px;
+}
+
+.form {
+  width: 49.999999%;
+  color: #3D1101;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.formInput {
+  width: 100%;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 14px;
+}
+
+.radio {
+  display: flex;
+  margin-top: 8px;
+}
+.radio input {
+  margin-right: 36px;
+}
+
+.btn {
+  text-align: right;
+  padding-top: 44px;
+}
+.btn input {
+  width: 70px;
+  height: 32px;
+  border: none;
+  color: white;
+}
+
+.cancel {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+}
+
+.submit {
+  background: #F56C23;
+  border-radius: 3px;
+}
+
+@media (max-width: 568px) {
+  .mapImg {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .mapImg img {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+}

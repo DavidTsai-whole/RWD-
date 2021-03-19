@@ -1,0 +1,96 @@
+@import "variable";
+@import "grid";
+
+.loginContent {
+    min-height: calc(100vh - 278px);
+    background: #ede8e5;
+    padding: 50px 0;
+    color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: $fontsize-20;
+        font-weight: bold;
+        margin-bottom: 35px;
+    }
+}
+
+.login {
+    max-width: 300px;
+    box-shadow: 3px 3px 4px 0;
+    padding: 15px 15px;
+    border-top: 3px solid $pink;
+    h3 {
+        font-weight: bold;
+        text-align: center;
+    }
+    input {
+        margin-top: 3px;
+        width: 100%;
+        height: 32px;
+    }
+    a {
+        color: red;
+    }
+}
+
+.email {
+    margin-top: 15px;
+    position: relative;
+    input {
+        padding-left: 30px;
+    }
+}
+
+.password {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    input {
+        padding-left: 30px;
+    }
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: space-around;
+    input {
+        width: 45%;
+        border: none;
+        color: white;
+        border-radius: 3px;
+    }
+    input:hover {
+        cursor: pointer;
+    }
+}
+
+.BtnRegister {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.BtnLogin {
+    background: $btn-orange;
+}
+
+.fa-envelope {
+    position: absolute;
+    top: 58%;
+    left: 9px;
+    opacity: 0.5;
+    font-size: 9px;
+}
+
+.fa-lock {
+    position: absolute;
+    top: 44%;
+    left: 9px;
+    opacity: 0.5;
+    font-size: 9px;
+}

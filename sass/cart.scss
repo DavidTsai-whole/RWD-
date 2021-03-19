@@ -1,0 +1,236 @@
+@import "variable";
+@import "grid";
+
+.MenuContent {
+    min-height: calc(100vh - 278px);
+    display: flex;
+    padding: 50px 42px;
+    background: $bg-gray;
+    color: $mainColor;
+    flex-wrap: wrap;
+}
+
+.menu {
+    width: 24%;
+    h3 {
+        font-size: $fontsize-20;
+        margin-bottom: 16px;
+    }
+    li:hover {
+        background: $mainColor;
+    }
+    a {
+        display: block;
+        color: $mainColor;
+        line-height: 32px;
+        border-bottom: 1px solid $mainColor;
+        padding: 4px 8px;
+    }
+    a:hover {
+        color: white;
+    }
+}
+@include pad {
+    .menu {
+        h3 {
+            font-size: 14px;
+        }
+        a {
+            font-size: $fontsize-12;
+        }
+    }
+}
+
+@include iphone {
+    .menu {
+        width: 100%;
+        margin-bottom: $fontsize-20;
+        h3 {
+            font-size: $fontsize-20;
+            text-align: center;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+}
+
+.fa-leaf {
+    margin-right: 15px;
+}
+
+.menuContent {
+    width: 76%;
+    padding: 0 10px;
+}
+
+@include iphone {
+    .menuContent {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.topBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    form {
+        width: 62%;
+        display: flex;
+        margin-left: 10px;
+    }
+    input {
+        height: 32px;
+        border: 2px solid $mainColor;
+        width: 100%;
+        border-radius: 0;
+    }
+    button {
+        background: $mainColor;
+        color: white;
+        border: none;
+        width: 36px;
+        height: 32px;
+        border-radius: 0;
+    }
+}
+
+@include iphone {
+    .topBar form {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+}
+
+.fa-search {
+    font-size: 19px;
+}
+
+.shoppingCart {
+    position: relative;
+    font-size: $fontsize-20;
+}
+
+.checkOut {
+    width: 35%;
+    text-align: right;
+    a {
+        color: $mainColor;
+    }
+}
+
+@include iphone {
+    .checkOut {
+        width: 100%;
+    }
+}
+
+.line {
+    padding-left: 12px;
+    padding-right: 17px;
+}
+
+.cartNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    background: $pink;
+    border: 1px solid $white;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -4px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    text-align: center;
+    img {
+        height: 120px;
+        object-fit: cover;
+    }
+    li {
+        width: 30.3333%;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        margin-bottom: 30px;
+        box-shadow: 3px 3px 4px 0;
+        position: relative;
+    }
+    h3 {
+        font-size: $fontsize-20;
+        margin-top: 11px;
+    }
+}
+
+@include pad {
+    .card li {
+        width: 46.3333%;
+    }
+}
+
+@include iphone {
+    .card {
+        li {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.underLine {
+    font-size: $fontsize-12;
+    margin-top: 8px;
+    position: relative;
+    ::after {
+        content: "";
+        border-bottom: 1px solid $mainColor;
+        width: 90px;
+        position: absolute;
+        top: 22px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.price {
+    padding-top: 30px;
+    font-size: $fontsize-20;
+    font-weight: bold;
+}
+
+.addCart {
+    width: 90%;
+    margin-top: 13px;
+    border: 2px solid $pink;
+    color: $pink;
+    padding: 6px 0;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin-left: 5%;
+    i {
+        padding-right: 9px;
+    }
+}
+.addCart:hover {
+    background: $pink;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: white;
+}
