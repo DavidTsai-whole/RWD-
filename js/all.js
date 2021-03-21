@@ -1,6 +1,19 @@
 
 
+
 $(document).ready(function () {
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 5000,
+        },
+    });
+
     $('.phoneMenu').click(function (e) {
         e.preventDefault();
         $('.fa-bars').toggle();
@@ -44,28 +57,11 @@ $(document).ready(function () {
             }
         });
 
-        $('.animate').each(function () {
-            let thisPos = $(this).offset().top;
-            if ((windowHei / 1.3 + scrollPos) >= thisPos) {
-                $(this).addClass('fadeIn');
-            }
-        });
-        $('.animate2').each(function () {
-            let thisPos = $(this).offset().top;
-            if ((windowHei / 1.3 + scrollPos) >= thisPos) {
-                $(this).addClass('fadeX');
-            }
-        });
-        $('.animate3').each(function () {
-            let thisPos = $(this).offset().top;
-            if ((windowHei / 1.3 + scrollPos) >= thisPos) {
-                $(this).addClass('fadeX');
-            }
-        });
+
         if (scrollPos >= 50)
             $('.top').addClass('fadeIn');
         else
             $('.top').removeClass('fadeIn');
     });
-
+    new WOW().init();
 });

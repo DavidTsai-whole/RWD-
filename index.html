@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -23,22 +26,23 @@
                 <li><a class="" href="index2.html">菜單</a></li>
                 <li><a class="" href="Login.html">登入</a></li>
             </ul>
-            <a class="phoneMenu" href=""><i class="fas fa-bars fa-2x"></i><i class="fas fa-times fa-2x" style="display: none;"></i></a>
+            <a class="phoneMenu" href=""><i class="fas fa-bars fa-2x"></i><i class="fas fa-times fa-2x"
+                    style="display: none;"></i></a>
 
 
         </div>
-        <div class="banner">
-            <img src="assets/header_desktop.png" alt="">
-            <div class="slogan">
-                <h2>咬一口就無法忘懷的漢堡</h2>
-                <p>七夕絕對無法錯過的好滋味
-                    <br>
-                    <i class="fas fa-utensils"></i>六角大漢堡<i class="fas fa-utensils"></i>
-
-                </p>
-
-
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background-image: url('assets/petr-sevcovic-e5Q5vWO55uU-unsplash.jpg');height:420px;background-size:cover;background-position: center ;">
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: url('assets/mike-PxJ9zkM2wdA-unsplash\ \(4\).jpg');height: 420px;background-size:cover;background-position: center ;">
+                </div>
             </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
         <div class="feature" id="feature">
             <div class="indexContainer">
@@ -49,7 +53,7 @@
                     </h2>
                 </div>
                 <ul>
-                    <li class="animate">
+                    <li class="wow animate__animated animate__slideInDown">
                         <img src="assets/feature_1.png" alt="">
                         <h3>台灣本土蔬菜</h3>
                         <p>
@@ -58,7 +62,7 @@
                             elit eget elit facilisis tristique. Nam vel iaculis mauris
                         </p>
                     </li>
-                    <li class="animate">
+                    <li class="wow animate__animated animate__slideInDown">
                         <img src="assets/feature_2.png" alt="">
                         <h3>專業米其林廚師</h3>
                         <p>
@@ -68,7 +72,7 @@
                             turpis.
                         </p>
                     </li>
-                    <li class="animate">
+                    <li class="wow animate__animated animate__slideInDown">
                         <img src="assets/feature_3.png" alt="">
                         <h3>對於專業不能退讓</h3>
                         <p>
@@ -83,8 +87,9 @@
 
         </div>
         <div class="chef" id="chef">
-            <img class="animate2" src="assets/main_chef_brown.png" alt="">
-            <div class="introduction animate3">
+            <img class="wow animate__animated animate__zoomInLeft" data-wow-duration="1.5s"
+                src="assets/main_chef_brown.png" alt="">
+            <div class="introduction wow animate__animated animate__zoomInRight">
                 <h3>今日主廚 : 帕金森 、 梅在帕</h3>
                 <h4>Today Chef: h4ulm in Shock</h4>
                 <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.
@@ -104,7 +109,7 @@
             <div class="indexContainer">
                 <h2>聽聽別人的感想</h2>
                 <ul class="feedback">
-                    <li class="animate">
+                    <li class="wow animate__animated animate__zoomIn" data-wow-duration="1.5s">
                         <img src="assets/avatar_1.png" alt="">
                         <div class="responsive">
                             <h3>高雄一口吃</h3>
@@ -115,7 +120,7 @@
                         </div>
 
                     </li>
-                    <li class="animate">
+                    <li class="wow animate__animated animate__zoomIn" data-wow-duration="1.5s">
                         <img src="assets/avatar_2.png" alt="">
                         <div class="responsive">
                             <h3>廟口小霸王</h3>
@@ -125,7 +130,7 @@
                             <h5>-- 金身道士</h5>
                         </div>
                     </li>
-                    <li class="animate">
+                    <li class="wow animate__animated animate__zoomIn" data-wow-duration="1.5s">
                         <img src="assets/avatar_3.png" alt="">
                         <div class="responsive">
                             <h3>春天也來了</h3>
@@ -146,11 +151,14 @@
                     要不要先定位呢 ?
                 </h2>
                 <div class="mapContent">
-                    <div class="mapImg animate2">
-                        <img src="assets/Map.png" alt="">
+                    <div class="mapImg wow animate__animated animate__heartBeat" data-wow-duration="1.5s">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.9361218464574!2d121.43013241495854!3d25.036241783971317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7dd8be91eaf%3A0xe342a67d6574f896!2z5aSp5Li75pWZ6LyU5LuB5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1616217083276!5m2!1szh-TW!2stw"
+                            width="471px" height="388" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
 
-                    <form action="index.html" class="form animate3">
+                    <form class="mapImg wow animate__animated animate__heartBeat" data-wow-duration="1.5s"
+                        action="index.html" class="form">
                         <label for="name">姓名</label>
                         <br>
                         <input class="formInput" type="text" id="name" placeholder="六角講師吃尾牙">
@@ -219,9 +227,13 @@
         <div class="top">
             <i class="far fa-arrow-alt-circle-up"></i>
         </div>
+
     </div>
     <script src="jquery-3.6.0.min.js"></script>
-    <script src="all.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/all.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

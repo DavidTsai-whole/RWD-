@@ -63,39 +63,15 @@
 	}
 }
 
-.banner {
-	position: relative;
-	height: 420px;
-	display: flex;
-	justify-content: center;
-}
 
-.slogan {
-	position: absolute;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.35);
-	text-align: center;
-	padding: 20px 42px 26px 20px;
-	margin-top: 8%;
-	p {
-		padding-top: 16px;
-		line-height: 1.4;
+  @include pad{
+	.swiper-container{
+		height: 350px;
 	}
-	h2 {
-		font-size: $fontsize-36;
-	}
-}
+  }
 
-@include pad {
-	.banner {
-		height: 320px;
-	}
-}
-@include iphone {
-	.slogan {
-		margin-top: 18%;
-	}
-}
+
+
 .footerContainer {
 	padding: 50px 21px;
 	display: flex;

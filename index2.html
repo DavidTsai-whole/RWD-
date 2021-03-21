@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -22,18 +23,18 @@
             <a class="phoneMenu" href=""><i class="fas fa-bars fa-2x"></i><i class="fas fa-times fa-2x"
                     style="display: none;"></i></a>
         </div>
-        <div class="banner">
-            <img src="assets/header_desktop.png" alt="">
-            <div class="slogan">
-                <h2>咬一口就無法忘懷的漢堡</h2>
-                <p>七夕絕對無法錯過的好滋味
-                    <br>
-                    <i class="fas fa-utensils"></i>六角大漢堡<i class="fas fa-utensils"></i>
-
-                </p>
-
-
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background-image: url('assets/petr-sevcovic-e5Q5vWO55uU-unsplash.jpg');height:420px;background-size:cover;background-position: center ;">
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: url('assets/mike-PxJ9zkM2wdA-unsplash\ \(4\).jpg');height: 420px;background-size:cover;background-position: center ;">
+                </div>
             </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
         <section class="MenuContent">
             <div class="menu">
@@ -131,7 +132,8 @@
         </div>
     </div>
     <script src="jquery-3.6.0.min.js"></script>
-    <script src="all.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
