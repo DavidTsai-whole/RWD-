@@ -390,11 +390,8 @@ body {
 .mapImg {
   width: 49.999999%;
 }
-.mapImg img {
-  height: 388px;
-}
 
-.form {
+.mapForm {
   width: 49.999999%;
   color: #3D1101;
   flex-direction: column;
@@ -431,6 +428,9 @@ body {
   border: none;
   color: white;
 }
+.btn input:hover {
+  cursor: pointer;
+}
 
 .cancel {
   background: rgba(0, 0, 0, 0.35);
@@ -447,11 +447,8 @@ body {
     width: 100%;
     margin-bottom: 20px;
   }
-  .mapImg img {
-    width: 100%;
-  }
 
-  .form {
+  .mapForm {
     width: 100%;
     padding-left: 0%;
   }

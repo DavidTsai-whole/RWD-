@@ -163,12 +163,8 @@
 
 .mapImg {
     width: 49.999999%;
-    img {
-        height: 388px;
-    }
 }
-
-.form {
+.mapForm {
     width: 49.999999%;
     color: $mainColor;
     flex-direction: column;
@@ -204,6 +200,9 @@
         border: none;
         color: white;
     }
+    input:hover {
+        cursor: pointer;
+    }
 }
 
 .cancel {
@@ -220,11 +219,8 @@
     .mapImg {
         width: 100%;
         margin-bottom: 20px;
-        img {
-            width: 100%;
-        }
     }
-    .form {
+    .mapForm {
         width: 100%;
         padding-left: 0%;
     }
